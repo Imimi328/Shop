@@ -1,0 +1,61 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$padding: 1em;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $padding;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 $padding;
+}
+
+nav ul li a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.slider, .product-grid {
+    display: flex;
+    gap: $padding;
+    overflow-x: auto;
+}
+
+.product {
+    border: 1px solid lighten($primary-color, 20%);
+    padding: $padding;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: $padding;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
